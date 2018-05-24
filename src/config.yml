@@ -1,0 +1,255 @@
+# ChatDistance Configuration File
+# Author: Axe_Villager (fedc4bf6-2f90-40eb-8bbb-277af4602cbe)
+# Version: 2.0
+# Website: https://dev.bukkit.org/projects/chat-distance
+# Tested on: Java 8, Minecraft 1.12.2
+# Created (yy/mm/dd): 2017/03/10
+# Last Updated (yy/mm/dd): 2018/05/25
+
+# +------------------------------------------------------+
+# |                    Chat Messages                     |
+# +------------------------------------------------------+
+
+
+# The chat format of obscure chat messages. Colour and
+# formatting codes are available. Use 'name' to display
+# the player's name and 'message' for the player's message.
+obscure chat format: "&fname&7: message"
+
+
+
+# The chat format of out of context chat messages. Colour and
+# formatting codes are available. Use 'name' to display
+# the player's name and 'message' for the player's message.
+out of context chat format: "&fname &eOOC&7: message"
+
+
+
+# The chat format of global chat messages. Colour and
+# formatting codes are available. Use 'name' to display
+# the player's name and 'message' for the player's message.
+global chat format: "&fname &eglobal&7: message"
+
+
+
+# The chat format of broadcast chat messages. Colour and
+# formatting codes are available. Use 'name' to display
+# the player's name and 'message' for the player's message.
+broadcast chat format: "&4Broadcast&f: &cmessage"
+
+
+
+# The chat format of staff chat messages. Colour and
+# formatting codes are available. Use 'name' to display
+# the player's name and 'message' for the player's message.
+staff chat format: "&fname &cSTAFF&7: message"
+
+
+
+# The divisor that is used to calculate the obscure chat
+# range. The higher the number, the smaller the obscure
+# chat range and larger the clear chat range.
+obscure chat range divisor: 2.5
+
+
+
+# The number that is amplified with the original percentage
+# of obscurity of the chat message. If the percentage
+# amplifier is equal to 1 then the percentage is not
+# changed. The higher the number is the more readable
+# obscure messages will be.
+obscure chat percentage amplifier: 1.75
+
+
+
+# The distance, in blocks, the default chat messages travel
+# before completely disappearing.
+chat range: 60
+
+
+
+# Should you use parenthesis nests around the chat message to whisper?
+# Example: (whispering)
+whisper with parenthesises: true
+
+
+
+# Define your own symbol for whispering (must be one
+# character). The default symbol is tilde (~). Use the
+# symbol in front of the chat message to whisper.
+# Example: ~whispering
+other whisper symbol: '~'
+
+
+
+# Should you use the own defined symbol (above) for whispering?
+whisper with other symbol: true
+
+
+
+# Should whispering be shown in italic text? If true,
+# the whisper symbols will be removed from the message
+# because the italic text shows that you are whispering.
+show whispering in italics: true
+
+
+
+# The amount the chat range is decreased when whispering.
+# The amount is multiplied with the whisper level. The
+# chat range does not go lower than 1.
+whisper chat range decrease: 25
+
+
+
+# The max whispering level. The whispering level is
+# indicated by the amount of parenthesis nests around
+# or whisper symbols in front of the message.
+max whisper level: 2
+
+
+
+# Should shouting be shown in bold text?
+show shouting in bold: true
+
+
+
+# The amount of exclamation marks in the chat message
+# indicates the shouting level. By setting this option
+# to true - only exclamation marks at the end of the
+# chat message will affect the shouting level.
+only count exclamation marks at the end of the sentence: false
+
+
+
+# The amount of hunger lost when shouting. The amount
+# is multiplied with the shouting level.
+shout hunger loss: 2
+
+
+
+# The amount the chat range is increased when shouting.
+# The amount is multiplied with the shouting level.
+shout chat range increase: 30
+
+
+
+# The max shouting level. The shouting level is
+# indicated by the amount of exclamation marks in or
+# at the end of the message.
+max shout level: 4
+
+
+
+# The error message the player receives when his/her
+# food level is too low to shout. Colour and formatting
+# codes are available.
+too low food level to shout message: "&cYour food level is too low to shout!"
+
+
+
+
+# +------------------------------------------------------+
+# |                 Join & Leave Messages                |
+# +------------------------------------------------------+
+
+# Should join and leave messages be local?
+use local join/leave messages: true
+
+
+
+# The distance, in blocks, the join and leave
+# messages travel before disappearing.
+join/leave messages range: 250
+
+
+
+# The join message. Use 'name' to display
+# the player's name.
+join message: "&7&oname joined..."
+
+
+
+# The leave message. Use 'name' to display
+# the player's name.
+leave message: "&7&oname left..."
+
+
+
+
+# +------------------------------------------------------+
+# |                    Death Messages                    |
+# +------------------------------------------------------+
+
+
+# Should death messages be local?
+use local death messages: true
+
+
+
+# The distance, in blocks, the death
+# messages travel before disappearing.
+death messages range: 250
+
+
+
+# The colour of the death messages.
+death messages colour: "GRAY"
+
+
+
+# The typography of the death messages. The
+# typography options are as following:
+#   - MAGIC, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+death messages typography: "ITALIC"
+
+
+
+
+# +------------------------------------------------------+
+# |                       Console                        |
+# +------------------------------------------------------+
+
+
+# Show the chat range of the chat message that was sent.
+show senders chat range in console: true
+
+
+
+# Show that the chat message is a shout or whisper
+# and what shout or whisper level it is.
+show whisper and shout levels in console: true
+
+
+
+# Show the chat message every receiver
+# received from the sender.
+show message received in console: true
+
+
+
+# Show the receivers' distance to
+# the sender of the chat message.
+show receivers distance to sender in console: true
+
+
+
+# Show a list of players that received the death message.
+show death message receivers in console: true
+
+
+
+# Show the receiver of the death message's
+# distance to the player that died.
+show received death message distance in console: true
+
+
+
+# Show a list of players that received
+# the join or leave message.
+show join/leave message receivers in console: true
+
+
+
+# Show the receiver of the join or leave message's
+# distance to the player that joined or left the server.
+show received join/leave message distance in console: true
