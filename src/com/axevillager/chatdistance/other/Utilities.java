@@ -162,10 +162,7 @@ public class Utilities {
     }
 
     public static boolean messageStartsWithSpace(final String message) {
-        if (message.startsWith(" ")) {
-            return true;
-        }
-        return message.startsWith("§") && message.length() > 2 && message.charAt(2) == ' ';
+        return message.startsWith(" ") || message.startsWith("§") && message.length() > 2 && message.charAt(2) == ' ';
     }
 
     public static String translateChatFormat(final String format) {

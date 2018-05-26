@@ -78,6 +78,8 @@ public class ChatDistanceHandler implements Listener {
             return;
         }
 
+
+
         customPlayer.sendObscureMessage(expressiveMessage, OBSCURE_CHAT_FORMAT);
     }
 }

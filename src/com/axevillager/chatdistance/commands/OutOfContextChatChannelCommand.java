@@ -5,6 +5,9 @@ import com.axevillager.chatdistance.player.CustomPlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
+import static com.axevillager.chatdistance.commands.Permissions.FORMATTING;
+import static com.axevillager.chatdistance.other.Utilities.formatChatCodes;
+
 /**
  * OutOfContextChatChannelCommand created by AxeVillager on 2018/05/09.
  */
@@ -33,7 +36,10 @@ public class OutOfContextChatChannelCommand extends AbstractCommand {
         for (final String word : args) {
             stringBuilder.append(word).append(" ");
         }
-        final String message = new String(stringBuilder).trim();
+        String message = new String(stringBuilder).trim();
+        if (customPlayer.hasPermission(FORMATTING)) {
+            message = formatChatCodes(message);
+        }
         final ExpressiveMessage expressiveMessage = new ExpressiveMessage(message, customPlayer);
         customPlayer.sendOutOfContextMessage(expressiveMessage);
     }
