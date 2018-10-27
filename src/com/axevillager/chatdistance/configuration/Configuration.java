@@ -16,7 +16,7 @@ public class Configuration {
     public final static String BROADCAST_CHAT_FORMAT = translateChatFormat(Main.config.getString("broadcast chat format", "&4Broadcast&7: &cmessage"));
     public final static String GLOBAL_CHAT_FORMAT = translateChatFormat(Main.config.getString("global chat format", "&fname &eglobal&7: message"));
     public final static String OUT_OF_CONTEXT_CHAT_FORMAT = translateChatFormat(Main.config.getString("out of context chat format", "&fname &eOOC&7: message"));
-    public final static String OBSCURE_CHAT_FORMAT = translateChatFormat(Main.config.getString("chat format", "&fname&7: message"));
+    public final static String OBSCURE_CHAT_FORMAT = translateChatFormat(Main.config.getString("obscure chat format", "&fname&7: message"));
     public final static double OBSCURE_CHAT_RANGE_DIVISOR = Main.config.getDouble("obscure chat range divisor", 2.5);
     public final static double OBSCURE_CHAT_PERCENTAGE_AMPLIFIER = Main.config.getDouble("obscure chat percentage amplifier", 1.75);
     public final static double CHAT_RANGE = Main.config.getDouble("chat range", 60);
